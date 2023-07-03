@@ -3,8 +3,12 @@ import os
 import requests
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 
 shodan_api = FastAPI()
+
+# Mount static files
+shodan_api.mount("/assets", StaticFiles(directory="assets"), name="assets")
 
 
 # Initialize the Qdrant endpoint URL and authentication headers:

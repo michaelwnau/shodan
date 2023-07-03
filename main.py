@@ -1,8 +1,23 @@
 # main.pr is the main file and containts the FastAPI app
+import os
+import requests
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 
 shodan_api = FastAPI()
+
+# Mount static files
+shodan_api.mount("/assets", StaticFiles(directory="assets"), name="assets")
+
+
+# Initialize the Qdrant endpoint URL and authentication headers:
+qdrant_url = os.environ.get("QDRANT_URL")
+auth_headers = os.environ.get("AUTH_HEADERS")
+# headers = {
+#     "Authorization" : "<authentication_headers>"
+#     "Content-Type" : "application/json"
+# }
 
 
 @shodan_api.get("/")

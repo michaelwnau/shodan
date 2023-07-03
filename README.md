@@ -25,9 +25,10 @@ pip install -r requirements.txt
 
 ## To start the server
 
-`$ uvicorn main:app --reload`
+`$ uvicorn main:shodan_api --reload`
 
 - The server will start at http://localhost:8000/.
+- You can view the Swagger UI at http://localhost:8000/docs. This is were you can test the API endpoints.
 
 
 License : [MIT](https://choosealicense.com/licenses/mit/)

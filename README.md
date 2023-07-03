@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## To start the server
 
-`$ uvicorn main:app --reload`
+`$ uvicorn main:shodan_api --reload`
 
 - The server will start at http://localhost:8000/.
 

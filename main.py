@@ -8,7 +8,7 @@ shodan_api = FastAPI()
 
 
 # Initialize the Qdrant endpoint URL and authentication headers:
-qdrant_url = os.environ.bet("QDRANT_URL")
+qdrant_url = os.environ.get("QDRANT_URL")
 auth_headers = os.environ.get("AUTH_HEADERS")
 # headers = {
 #     "Authorization" : "<authentication_headers>"

@@ -32,3 +32,7 @@ pip install -r requirements.txt
 
 
 License : [MIT](https://choosealicense.com/licenses/mit/)
+
+"SHODAN", "TriOptimum", and "System Shock" are registered trademarks of [Night Dive Studios](https://nightdivestudios.com/).
+
+"shodan.io" is a registered trademark of [John Matherly](https://twitter.com/achillean). This project is not affiliated with Shodan Inc. in any way.

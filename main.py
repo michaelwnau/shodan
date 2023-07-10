@@ -23,7 +23,7 @@ I
 
 @shodan_api.get("/")
 async def read_root():
-    return {"message": "Hello human"}
+    return {"message": "Hello human. Welcome to the Shodan API"}
 
 
 # Now we will create operations for the API to perform POST, GET, PUT, DELETE

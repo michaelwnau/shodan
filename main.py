@@ -18,7 +18,6 @@ auth_headers = os.environ.get("AUTH_HEADERS")
 #     "Authorization" : "<authentication_headers>"
 #     "Content-Type" : "application/json"
 # }
-I
 
 
 @shodan_api.get("/")

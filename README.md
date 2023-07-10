@@ -1,3 +1,4 @@
+# shodan-server
 # shodan
 # Shodan API
 
@@ -17,11 +18,15 @@ Shodan API is a FastAPI backend designed to integrate with vector databases, Lan
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required dependencies.
+We use Poetry for dependency management. It handles both the package installation and the virtual environment for you.
 
-```bash
-pip install -r requirements.txt
-```
+First, ensure you have Poetry installed. If not, $bash install it globally:
+
+`curl -sSL https://install.python-poetry.org | python - `
+
+Then, from the project's root directory, install the project's dependencies:
+
+`poetry install`
 
 ## To start the server
 

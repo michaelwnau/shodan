@@ -1,1 +1,1 @@
-web: uvicorn main:shodan_api --host=0.0.0.0 --port=${PORT:-5000}
+web: uvicorn main:shodan --host=0.0.0.0 --port=${PORT:-5000}

@@ -1,0 +1,40 @@
+# shodan-zeta-db
+
+qdrant 
+
+api key: AxULpTPqfPPXw2tTMg0NROq4wn97y59u7Muwb8jBcp7fHrQ0ONz7Lw
+
+
+# Create Free-tier cluster:
+
+curl \
+    -X GET 'https://97ee601e-c15f-470f-8ebf-0c3a27e1602f.us-east-1-0.aws.cloud.qdrant.io:6333' \
+    --header 'api-key: AxULpTPqfPPXw2tTMg0NROq4wn97y59u7Muwb8jBcp7fHrQ0ONz7Lw'
+
+# cluster url
+
+https://97ee601e-c15f-470f-8ebf-0c3a27e1602f.us-east-1-0.aws.cloud.qdrant.io
+
+
+
+# Authentication vi Python client
+
+In app: 
+`
+from qdrant_client import QdrantClient
+
+qdrant_client = QdrantClient(
+    "xyz-example.eu-central.aws.staging-cloud.qdrant.io", 
+    prefer_grpc=True,
+    api_key="<<-provide-your-own-key->>",
+)
+`
+# Authentication vi bash
+
+`
+curl \
+  -X GET https://xyz-example.eu-central.aws.staging-cloud.qdrant.io:6333 \
+  --header 'api-key: <provide-your-own-key>'
+`
+
+

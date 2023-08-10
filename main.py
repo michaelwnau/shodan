@@ -22,7 +22,7 @@ auth_headers = os.environ.get("AUTH_HEADERS")
 
 @shodan_api.get("/")
 async def read_root():
-    return {"message": "Hello human. Welcome to the Shodan API"}
+    return {"message": "Hello tiny human. Welcome to the Shodan API"}
 
 
 # Now we will create operations for the API to perform POST, GET, PUT, DELETE

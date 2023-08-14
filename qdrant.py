@@ -27,3 +27,4 @@ client.recreate_collection(
     collection_name=os.getenv("QDRANT_COLLECTION_NAME"),
     vectors_config=,
 )
+# restart at 15:25 https://www.youtube.com/watch?v=VL6MAAgwSDM
